@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Standard Deviation Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Task description
 
-## Available Scripts
+- Write a PHP script that calculates the standard deviation based on the provided formula.
+- Develop a React component that includes a button labeled "Calculate Standard
+Deviation" and a display area to show the result.
+- Implement an API call from the React component to the PHP script when the button is
+clicked.
+- Parse and display the retrieved standard deviation result within the display area on the
+web page.
+- Please provide the code and instructions on how to run and test the application.
 
-In the project directory, you can run:
+## Solution 
 
-### `npm start`
+- PHP script created that calculates the standard deviation based on the formula. 
+- React component 'StandardDeviationCalculator.jsx' is created that includes a input field, button labeled "Calculate Standard
+Deviation", and a display area to show the results.
+- User input is fetched from the react application.
+  - Input format: 1,2,3,4
+  - Numbers seperated by a comma(,).
+- The number array is passed to the PHP script that is hosted using apche server(XAMPP).
+- (Place the calculate_standard_deviation.php file in htdocs of xampp folder in local).
+- The php script returns the value of standard deviation and that is caught by the react application and displayed in the display area.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Steps to run and test the application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Create a react application using `npx create-react-app standard_deviation_calculator`.
+2. Download the zip folder of this repository and extract the contents for the file.
+3. Once the react application is set as per the repository strucuture and the code.
+4. Create calculate_standard_deviation.php file in htdocs of XAMPP folder in local system.
+5. (Content available in the zip folder)
+6. After setting up open XAMPP and run apache.
+7. In the react application directory open terminal and start the application using `npm start`.
+8. The react application is running in the [localhost:3000](http://localhost:3000/) and the php script in [localhost:80/calculate_standard_deviation.php](http://localhost:80/calculate_standard_deviation).
 
-### `npm test`
+## Output
+![Output1](https://github.com/sri9384/standard_deviation_calculator/assets/109747178/2e920ead-d41b-42e5-a71d-567a76f08b00)
+![Output2](https://github.com/sri9384/standard_deviation_calculator/assets/109747178/5cb3e607-4d32-4c5c-b198-6e9c2300ad11)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
